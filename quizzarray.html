@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <title>
+        Quizz
+    </title>
+</head>
+
+<body>
+    <p id="cau_hoi1">What does HTML stand for?</p>
+    <input type="radio" name="tra_loi" id='a' /> <span id="dap_an_a"> Hyper Text Markup Language</span> <br/>
+    <input type="radio" name="tra_loi" id='b' /> <span id="dap_an_b"> Home Tool Markup Language</span> <br/>
+    <input type="radio" name="tra_loi" id='c' /> <span id="dap_an_c"> Hyperlinks and Text Markup Language</span> <br/>
+    <input type="radio" name="tra_loi" id='d' /> <span id="dap_an_d"> Nothing</span> <br/>
+    <p id="cau_hoi2">Who is making the Web standards ?</p>
+    <input type="radio" name="tra_loi" id='a' /> <span id="dap_an_a">Google </span> <br/>
+    <input type="radio" name="tra_loi" id='b' /> <span id="dap_an_b"> Mozilla</span> <br/>
+    <input type="radio" name="tra_loi" id='c' /> <span id="dap_an_c"> The World Wide Web</span> <br/>
+    <input type="radio" name="tra_loi" id='d' /> <span id="dap_an_d">Microsoft</span><br/>
+    <p id="cau_hoi3">Choose the correct HTML element for the largest heading: </p>
+    <input type="radio" name="tra_loi" id='a' /> <span id="dap_an_a">&lt  head &gt </span> <br/>
+    <input type="radio" name="tra_loi" id='b' /> <span id="dap_an_b"> &lt  h6 &gt</span> <br/>
+    <input type="radio" name="tra_loi" id='c' /> <span id="dap_an_c"> &lt  h1 &gt</span> <br/>
+    <input type="radio" name="tra_loi" id='d' /> <span id="dap_an_d">&lt  heading &gt</span><br/>
+    <button onclick="check()">Next</button>
+    <script>
+        var a = document.getElementById("cau_hoi1").value
+        var b = document.getElementById("cau_hoi2").value
+        var c = document.getElementById("cau_hoi3").value
+
+    function check() {
+        let chuoi = [a, b, c]
+        for (i = 0; i < chuoi.length; i++) {
+           document.write(chuoi[i])
+         }
+         }
+    </script>
+</body>
+
+</html>
